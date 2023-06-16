@@ -1,0 +1,111 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/cielo.jpg');
+    display: flex;
+    justify-content: center;
+}
+
+.title-game{
+    text-align: center;
+    font-weight: 800;
+}
+
+.main-content{
+    width: 650px;
+}
+
+.content-puntuation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-controls{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.content-controls .content-timer{
+    display: none;
+}
+
+.content-controls .content-timer #timer{
+    transition: all 0.3s ease-out;
+}
+
+.content-controls .btn-start-game,
+.content-controls .btn-play-again{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    width: 180px;
+    transition: all 0.3s ease-out;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+
+.btn-start-game:hover{
+    transform: scale(1.2);
+    background-color: rgb(101, 255, 101);
+
+}
+
+.btn-play-again{
+    display: none;
+}
+
+.btn-play-again:hover{
+    transform: scale(1.2);
+    background-color: rgb(42, 230, 226);
+}
+
+.content-game{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+}
+
+
+.content-game .item-home{
+    text-align: center;
+    position: relative;
+}
+
+.img-casa-pajaro{
+    width: 130px;
+    height: 130px;
+}
+
+.last-seconds{
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+}
+
+.pajaro-azul {
+    z-index: 30;
+    position: absolute;
+    background-image: url("./assets/aveAzul.png");
+    background-size: cover;
+  }
+
+  .pajaro-rosa {
+    z-index: 30;
+    position: absolute;
+    background-image: url("./assets/aveRosa.png");
+    background-size: cover;
+  }
